@@ -15,9 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+# from rest_framework_swagger.views import get_swagger_view
+
+
+# schema_view = get_swagger_view(title='Add vehicle service')
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('add_vehicle/', include('add_vehicle.urls'))
-
+    path('', include('add_vehicle.urls')),
 ]
+
+
+
+
+
