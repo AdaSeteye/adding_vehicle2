@@ -2,7 +2,7 @@
     "builds": [
       {
         "src": "add_vehicle_service/wsgi.py",
-        "use": "@vercel/python",
+        "use": "@vercel/python"
       }
    
     ],
