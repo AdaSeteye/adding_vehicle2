@@ -22,7 +22,7 @@ def get_edvla_renewal_date(chassis_number):
 
 
 def get_insurance_renewal_date(chassis_number):
-    insurance_api_url = 'http://127.0.0.1:8001'  
+    insurance_api_url = 'https://third-party-insurance-api.vercel.app/'  
 
     response = requests.get(f"{insurance_api_url}/renewal_date/{chassis_number}")
     
